@@ -1,0 +1,774 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* hero section start */
+/* Header start */
+.hero_bg {
+  background-image: url("../img/travel-1.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-section-wrapper .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-section-wrapper .container .hero_section {
+  padding: 0 20px;
+  width: 100%;
+}
+.menu-section-wrapper .container .hero_section .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-section-wrapper .container .hero_section .nav-menu .menu_items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-section-wrapper
+  .container
+  .hero_section
+  .nav-menu
+  .menu_items
+  .nav_link
+  ul {
+  margin-bottom: 0;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu-section-wrapper
+  .container
+  .hero_section
+  .nav-menu
+  .menu_items
+  .nav_link
+  > ul
+  > li
+  > a {
+  color: #000;
+  font-weight: bold;
+  padding: 2px 12px;
+  border-right: 2px solid #000;
+}
+
+.menu-section-wrapper
+  .container
+  .hero_section
+  .nav-menu
+  .menu_items
+  .support_items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-section-wrapper
+  .container
+  .hero_section
+  .nav-menu
+  .menu_items
+  .support_items
+  .user_link {
+  color: white;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 5px;
+  background-color: red;
+  padding: 6px 6px;
+  border-radius: 3px;
+}
+
+.menu-section-wrapper
+  .container
+  .hero_section
+  .nav-menu
+  .menu_items
+  .support_items
+  .phone_number {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #4444f5;
+  padding: 4px 6px;
+  border-radius: 3px;
+}
+
+.menu-section-wrapper
+  .container
+  .hero_section
+  .nav-menu
+  .menu_items
+  .support_items
+  .phone_number
+  > code {
+  color: white;
+}
+
+.menu-section-wrapper
+  .container
+  .hero_section
+  .nav-menu
+  .menu_items
+  .support_items
+  .support {
+  width: max-content;
+  background-color: white;
+  font-weight: bold;
+  display: inline-flex;
+  flex-direction: column;
+  color: red;
+  padding: 4px 6px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+/* Header end */
+
+.hero_section .search_box_main {
+  padding: 150px 0;
+}
+
+.hero_section .search_box_main .Search_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.hero_section .search_box_main .Search_buttons button:first-child {
+  border-left: 1px solid #000;
+  border-radius: 10px 0 0 10px;
+}
+
+.hero_section .search_box_main .Search_buttons :first-child > i {
+  transform: rotate(-55deg);
+}
+
+.hero_section .search_box_main .Search_buttons button:last-child {
+  border-right: 1px solid #000;
+  border-radius: 0 10px 10px 0;
+}
+
+.hero_section .search_box_main .Search_buttons button {
+  background-color: #fff;
+  padding: 10px 25px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  outline: none;
+}
+
+.hero_section .search_box_main .Search_buttons button:focus {
+  background-color: #e50909;
+  color: white;
+}
+
+.hero_section .search_box_main .Search_buttons button:hover {
+  background-color: #e50909;
+  color: white;
+}
+
+.hero_section .search_box_main .search_items_inputs {
+  text-align: start;
+  padding: 15px 30px;
+
+  background: rgba(26, 19, 19, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(26, 19, 19, 0.01);
+}
+
+.hero_section .search_box_main .search_items_inputs .date_buttons {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero_section .search_box_main .search_items_inputs .date_buttons button {
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+
+.hero_section .search_box_main .search_items_inputs .date_buttons button:focus {
+  color: red;
+}
+.hero_section .search_box_main .search_items_inputs .date_buttons button:hover {
+  color: red;
+}
+
+.hero_section .search_box_main .search_items_inputs .search_form form {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hero_section .search_box_main .search_items_inputs .search_form form div {
+  padding: 10px 0;
+}
+
+.hero_section
+  .search_box_main
+  .search_items_inputs
+  .search_form
+  form
+  div
+  label {
+  color: #fff;
+}
+
+.hero_section .search_box_main .search_items_inputs .search_form form div input,
+select {
+  height: 45px;
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.hero_section
+  .search_box_main
+  .search_items_inputs
+  .search_form
+  form
+  div:last-child
+  input {
+  background-color: red;
+  outline: none;
+  border: none;
+  color: white;
+}
+/* hero section end */
+
+/* Most popular places section start */
+.most_popular_places {
+  padding: 40px 0;
+}
+
+.most_popular_places .most_popular_places_headlines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.most_popular_places .most_popular_places_headlines .hr_line {
+  height: 6px;
+  width: 150px;
+  background-color: #ddddd3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.most_popular_places .most_popular_places_headlines .hr_line > div {
+  text-align: center;
+  height: 100%;
+  width: 50px;
+  background-color: #da2231;
+}
+
+.most_popular_places .image_card_main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.most_popular_places .image_card_main .image_card .image_card_texts_buttons {
+  position: relative;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .image_card_texts_buttons
+  > img {
+  height: 100%;
+  width: 100%;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .image_card_texts_buttons
+  .image_card_texts {
+  position: absolute;
+  width: 100%;
+  color: white;
+  bottom: 0;
+  left: 0;
+}
+
+.most_popular_places .image_card_main .image_card > div > div > p {
+  text-align: left;
+  font-weight: bold;
+  padding: 0 0 0 30px;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .image_card_texts_buttons
+  .image_card_texts
+  p:first-child {
+  font-size: 16px;
+}
+.most_popular_places
+  .image_card_main
+  .image_card
+  .image_card_texts_buttons
+  .image_card_texts
+  p:nth-child(2) {
+  font-size: 12px;
+}
+
+.most_popular_places .image_card_main .image_card > div > div > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.most_popular_places .image_card_main .image_card > div > div > div button {
+  padding: 15px 0;
+  display: block;
+  width: 50%;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  border-bottom: none;
+}
+
+.most_popular_places .image_card_main .image_card .card_ratings {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .card_ratings_texts {
+  display: flex;
+  align-items: end;
+  padding: 30px;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .card_ratings_texts
+  .ratings_text_box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .card_ratings_texts
+  .ratings_text_box
+  > i {
+  font-size: 40px;
+  color: orange;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .card_ratings_texts
+  .ratings_text_box
+  .rating_header
+  > h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .card_ratings_texts
+  .ratings_text_box
+  .rating_header
+  > p {
+  text-align: start;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 50%;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .ratings_button {
+  width: 100%;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .ratings_button
+  > button {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-top: 1px solid #000;
+  background-color: transparent;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.most_popular_places
+  .image_card_main
+  .image_card
+  .card_ratings
+  .card_ratings_texts
+  > p {
+  color: orange;
+  width: 100%;
+}
+
+.ratings_view_more {
+  padding: 30px 0px;
+  width: 100%;
+}
+
+.ratings_view_more > button {
+  background-color: transparent;
+  font-weight: bold;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid gray;
+}
+
+/* Most popular places section end */
+
+/* holiday inspiration sevtion start */
+.holiday_bg {
+  background-image: url("../img/travel-2.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.holiday_inspiration {
+  padding: 100px 0;
+}
+.holiday_inspiration .holiday_header > h4 {
+  color: white;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.holiday_inspiration .holiday_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.holiday_inspiration .holiday_icons {
+  font-size: 35px;
+}
+/* facebook icon  */
+.holiday_inspiration .holiday_icons > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #355a93;
+  padding: 10px;
+  border-radius: 50%;
+}
+.holiday_inspiration .holiday_icons > div:first-child > i {
+  color: white;
+  border-radius: 50%;
+}
+
+/* twitter icon  */
+.holiday_inspiration .holiday_icons > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #1fc2ed;
+  padding: 10px;
+  border-radius: 50%;
+}
+.holiday_inspiration .holiday_icons > div:nth-child(2) > i {
+  color: white;
+  border-radius: 50%;
+}
+
+/* google plus icon  */
+.holiday_inspiration .holiday_icons > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  background-color: #df4c40;
+  padding: 10px;
+  border-radius: 50%;
+}
+.holiday_inspiration .holiday_icons > div:nth-child(3) > i {
+  color: white;
+  border-radius: 50%;
+}
+
+/* holiday inspiration sevtion end */
+
+/* gallery sevtion start */
+.gallery_section {
+  padding: 40px 0;
+}
+
+.gallery_section .gallery_headlines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.gallery_section .gallery_headlines .gallery_hr_line {
+  height: 6px;
+  width: 150px;
+  background-color: #ddddd3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery_section .gallery_headlines .gallery_hr_line > div {
+  text-align: center;
+  height: 100%;
+  width: 50px;
+  background-color: #da2231;
+}
+
+/* gallery buttons design start */
+.gallery_section .gallery_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding-bottom: 30px;
+}
+
+.gallery_section .gallery_buttons button {
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 10px 25px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: bold;
+  border: none;
+  border: 1px solid #f8f7f7;
+  border-bottom: 5px solid #f8f7f7;
+  outline: none;
+}
+
+.gallery_section .gallery_buttons button:focus {
+  border-bottom: 5px solid #e50909;
+}
+
+.gallery_section .gallery_buttons button:hover {
+  border-bottom: 5px solid #e50909;
+}
+/* gallery buttons design end */
+
+.gallery_images {
+  padding: 40px 0;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, auto);
+  gap: 16px;
+}
+
+.gallery_images > img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+/* gallery sevtion end */
+
+/* How it work section start */
+.how_it_work_bg {
+  background-image: url("../img/image-1.jpg");
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.how_it_work {
+  padding: 170px 0;
+  position: relative;
+}
+.how_it_work .how_it_work_header > h4 {
+  text-transform: uppercase;
+  padding: 20px 0;
+  font-size: 40px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.how_it_work .how_it_work_icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.how_it_work .how_it_work_icons {
+  font-size: 35px;
+}
+
+/* binocular icon  */
+.how_it_work .how_it_work_icons > div:first-child > div {
+  background-color: #ce9c10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.how_it_work .how_it_work_icons > div:first-child > div > i {
+  color: white;
+  border-radius: 50%;
+}
+
+.how_it_work .how_it_work_icons > div:first-child > p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Earth icon  */
+.how_it_work .how_it_work_icons > div:nth-child(2) > div {
+  background-color: #cc1818;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.how_it_work .how_it_work_icons > div:nth-child(2) > div > i {
+  color: white;
+  border-radius: 50%;
+}
+
+.how_it_work .how_it_work_icons > div:nth-child(2) > p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Check icon  */
+.how_it_work .how_it_work_icons > div:nth-child(3) > div {
+  background-color: #72e1fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.how_it_work .how_it_work_icons > div:nth-child(3) > div > i {
+  color: white;
+  border-radius: 50%;
+}
+
+.how_it_work .how_it_work_icons > div:nth-child(3) > p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.how_it_work .how_it_work_description {
+  width: 100%;
+  color: white;
+  position: absolute;
+  bottom: 0;
+
+  background: rgba(26, 19, 19, 0.46);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(26, 19, 19, 0.01);
+}
+
+.how_it_work_description > p {
+  padding: 20px 0;
+  font-weight: bold;
+}
+
+/* How it work section end */
