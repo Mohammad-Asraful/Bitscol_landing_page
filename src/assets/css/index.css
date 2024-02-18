@@ -85,6 +85,7 @@ body {
   border-right: 2px solid #000;
 }
 
+/* support items */
 .menu-section-wrapper
   .container
   .hero_section
@@ -105,8 +106,8 @@ body {
   .user_link {
   color: white;
   display: flex;
-  align-items: end;
-  justify-content: end;
+  align-items: flex-end;
+  justify-content: flex-end;
   gap: 5px;
   background-color: red;
   padding: 6px 6px;
@@ -242,7 +243,7 @@ body {
 
 .hero_section .search_box_main .search_items_inputs .search_form form {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   gap: 10px;
 }
@@ -315,7 +316,7 @@ select {
 
 .most_popular_places .image_card_main {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   gap: 10px;
 }
@@ -368,13 +369,24 @@ select {
   font-size: 12px;
 }
 
-.most_popular_places .image_card_main .image_card > div > div > div {
+.most_popular_places
+  .image_card_main
+  .image_card
+  > .image_card_texts_buttons
+  > .image_card_texts
+  > div {
   width: 100%;
   display: flex;
   align-items: center;
 }
 
-.most_popular_places .image_card_main .image_card > div > div > div button {
+.most_popular_places
+  .image_card_main
+  .image_card
+  > .image_card_texts_buttons
+  > .image_card_texts
+  > div
+  button {
   padding: 15px 0;
   display: block;
   width: 50%;
@@ -396,7 +408,7 @@ select {
   .card_ratings
   .card_ratings_texts {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   padding: 30px;
 }
 
@@ -476,7 +488,7 @@ select {
   .image_card
   .card_ratings
   .card_ratings_texts
-  > p {
+  .rating_icons {
   color: orange;
   width: 100%;
 }
@@ -496,7 +508,7 @@ select {
 
 /* Most popular places section end */
 
-/* holiday inspiration sevtion start */
+/* holiday inspiration section start */
 .holiday_bg {
   background-image: url("../img/travel-2.jpg");
   background-position: fixed;
@@ -518,11 +530,9 @@ select {
   align-items: center;
   justify-content: center;
   gap: 20px;
-}
-
-.holiday_inspiration .holiday_icons {
   font-size: 35px;
 }
+
 /* facebook icon  */
 .holiday_inspiration .holiday_icons > div:first-child {
   display: flex;
@@ -533,10 +543,7 @@ select {
   background-color: #355a93;
   padding: 10px;
   border-radius: 50%;
-}
-.holiday_inspiration .holiday_icons > div:first-child > i {
   color: white;
-  border-radius: 50%;
 }
 
 /* twitter icon  */
@@ -547,11 +554,8 @@ select {
   height: 50px;
   width: 50px;
   background-color: #1fc2ed;
-  padding: 10px;
-  border-radius: 50%;
-}
-.holiday_inspiration .holiday_icons > div:nth-child(2) > i {
   color: white;
+  padding: 10px;
   border-radius: 50%;
 }
 
@@ -565,15 +569,12 @@ select {
   background-color: #df4c40;
   padding: 10px;
   border-radius: 50%;
-}
-.holiday_inspiration .holiday_icons > div:nth-child(3) > i {
   color: white;
-  border-radius: 50%;
 }
 
-/* holiday inspiration sevtion end */
+/* holiday inspiration section end */
 
-/* gallery sevtion start */
+/* gallery section start */
 .gallery_section {
   padding: 40px 0;
 }
@@ -618,8 +619,8 @@ select {
   background-color: #fff;
   padding: 10px 25px;
   display: flex;
-  gap: 5px;
   align-items: center;
+  gap: 5px;
   font-weight: bold;
   border: none;
   border: 1px solid #f8f7f7;
@@ -650,7 +651,7 @@ select {
   width: 100%;
   margin-bottom: 16px;
 }
-/* gallery sevtion end */
+/* gallery section end */
 
 /* How it work section start */
 .how_it_work_bg {
@@ -678,9 +679,6 @@ select {
   align-items: center;
   justify-content: center;
   gap: 50px;
-}
-
-.how_it_work .how_it_work_icons {
   font-size: 35px;
 }
 
@@ -695,16 +693,14 @@ select {
   padding: 10px;
   border-radius: 50%;
   border: 3px solid #fff;
-}
-
-.how_it_work .how_it_work_icons > div:first-child > div > i {
   color: white;
-  border-radius: 50%;
 }
 
-.how_it_work .how_it_work_icons > div:first-child > p {
+.how_it_work .how_it_work_icons > div > p {
+  font-weight: bold;
   margin-top: 10px;
   font-size: 18px;
+  color: #fff;
 }
 
 /* Earth icon  */
@@ -718,16 +714,7 @@ select {
   padding: 10px;
   border-radius: 50%;
   border: 3px solid #fff;
-}
-
-.how_it_work .how_it_work_icons > div:nth-child(2) > div > i {
   color: white;
-  border-radius: 50%;
-}
-
-.how_it_work .how_it_work_icons > div:nth-child(2) > p {
-  margin-top: 10px;
-  font-size: 18px;
 }
 
 /* Check icon  */
@@ -741,16 +728,7 @@ select {
   padding: 10px;
   border-radius: 50%;
   border: 3px solid #fff;
-}
-
-.how_it_work .how_it_work_icons > div:nth-child(3) > div > i {
   color: white;
-  border-radius: 50%;
-}
-
-.how_it_work .how_it_work_icons > div:nth-child(3) > p {
-  margin-top: 10px;
-  font-size: 18px;
 }
 
 .how_it_work .how_it_work_description {
@@ -910,8 +888,8 @@ footer {
 
 .footer_section .footer_links {
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 40px;
 }
 
@@ -934,8 +912,8 @@ footer {
   width: max-content;
   text-align: left;
   display: flex;
-  align-items: start;
-  justify-content: start;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: 20px;
 }
 
@@ -975,7 +953,7 @@ footer .footer_hr_line {
 .mr_raj {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   text-align: right;
   font-weight: bold;
 }
