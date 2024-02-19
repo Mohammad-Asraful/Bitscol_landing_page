@@ -926,7 +926,7 @@ footer .footer_hr_line {
   border: none;
 }
 
-.information_links {
+.footer_links .footer_link_div .information_links {
   display: flex;
   gap: 30px;
   text-align: left;
@@ -958,10 +958,13 @@ footer .footer_hr_line {
   font-weight: bold;
 }
 
-.footer_icon {
-  color: #fff;
+.footer_section .footer_icon_and_copyright .footer_icon {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+
+.footer_section .footer_icon_and_copyright .footer_icon > a {
+  color: white;
 }
 /* footer section end */

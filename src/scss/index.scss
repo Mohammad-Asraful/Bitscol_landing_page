@@ -766,11 +766,91 @@ footer {
   .footer_section {
     padding: 0 30px;
 
+    //  footer links
     .footer_links {
       display: flex;
       align-items: flex-start;
       justify-content: flex-start;
       gap: 40px;
+
+      .footer_link_div {
+        width: 25%;
+
+        .information_links {
+          display: flex;
+          gap: 30px;
+          text-align: left;
+
+          > div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            > a {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              color: #fff;
+            }
+          }
+        }
+
+        //   what people says
+        > div {
+          .what_people_says {
+            text-align: left;
+            margin-bottom: 20px;
+          }
+          .mr_raj {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            text-align: right;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .footer_image {
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      .footer_headers {
+        text-transform: uppercase;
+        color: red;
+        margin-bottom: 100px;
+      }
+      .footer_contacts {
+        width: max-content;
+        text-align: left;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+      }
+    }
+
+    //   footer hr line
+    .footer_hr_line {
+      margin: 80px 0;
+      height: 1px;
+      width: 100%;
+      background-color: lightgray;
+      outline: none;
+      border: none;
+    }
+
+    //  footer icon and copyright
+    .footer_icon_and_copyright {
+      .footer_icon {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        > a {
+          color: #fff;
+        }
+      }
     }
   }
 }
